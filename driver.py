@@ -60,7 +60,7 @@ class Driver:
                 prediction = clf.predict(data[(len(data) - 50):])
                 results.append(accuracy_score(target[(len(data) - 50):], prediction))
                 print("{} -> {}".format(i, results[-1]))
-            with open("results-benchmark.csv", "a") as results_file:
+            with open("research/results-benchmark.csv", "a") as results_file:
                 results_file.write("{},{}\n".format(i, round(np.mean(results), 3)))
             print("{} -> {}".format(i, np.mean(results)))
 
