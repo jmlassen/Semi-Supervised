@@ -6,7 +6,6 @@ from nltk.corpus import stopwords
 
 DEFAULT_N_WORDS = 250
 DEFAULT_SMOOTHING_VALUE = 1
-# TODO: This should be number of unique words for target dictionary.
 
 
 class SemiNbClassifier:
