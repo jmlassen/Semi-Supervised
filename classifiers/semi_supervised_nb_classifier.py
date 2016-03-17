@@ -91,16 +91,14 @@ class SemiNbClassifier:
                 self.word_counts[target][word[0]] += weight
 
     def _calc_target_prob(self, bag, target):
-        probs = [self._get_target_prob(target)]
+        probabilities = [self._get_target_prob(target)]
         for word in bag:
             if word[0] not in self.word_counts[target]:
                 value = self.smoothing_value
             else:
                 value = self.word_counts[target][word[0]] + self.smoothing_value
-                # print("'{}' found with count {} for target {}".format(word[0], value, target))
-            probs.append(value / (self.target_count[target] + len(self.word_counts)))
-            # print("Probability found to be {}".format(probs[-1]))
-        return functools.reduce(operator.mul, probs, 1)
+            probabilities.append(value / (self.target_count[target] + len(self.word_counts)))
+        return functools.reduce(operator.mul, probabilities, 1)
 
     def _add_target_count(self, target):
         if target not in self.target_count:
