@@ -6,41 +6,62 @@ from nltk.corpus import stopwords
 
 DEFAULT_N_WORDS = 250
 DEFAULT_SMOOTHING_VALUE = 1
+DEFAULT_UNLABELED_VALUE = -1
+DEFAULT_WEIGHT = 1
 
 
 class SemiNbClassifier:
     def __init__(self, n_words=DEFAULT_N_WORDS, smoothing_value=DEFAULT_SMOOTHING_VALUE,
-                stop=stopwords.words('english')):
+                 stop=stopwords.words('english'), unlabeled_value=DEFAULT_UNLABELED_VALUE, weight=DEFAULT_WEIGHT):
+        self.n_words = n_words
         self.smoothing_value = smoothing_value
         self.stop = stop
-        self.n_words = n_words
+        self.unlabeled_value = unlabeled_value
+        self.weight = weight
         self.word_counts = None
         self.target_count = None
         self.target_values = None
 
     def fit(self, data, target):
+        """
+
+        Since the probability of an unlabeled point will change until all the labeled points are added to our
+        classifier, we have to go through every record of the training data, and set unlabeled points aside until all
+        the labeled points have been added. We then predict the classification of the unlabeled point before adding
+        its words to our classifier.
+
+        :param data:
+        :param target:
+        :return:
+        """
         self.target_values = self._get_unique_target_values(target)
         self.target_count = {}
         self._add_bags(self.target_values)
+        unlabeled_bags = []
         for i, point in enumerate(data):
             bag = self._bag_point(point)
-            self._add_word_counts(bag, target[i])
+            if target[i] == self.unlabeled_value:
+                unlabeled_bags.append(bag)
+            self._add_word_counts(bag, target[i], self.weight)
             self._add_target_count(target[i])
+        for unlabeled_bag in unlabeled_bags:
+            probabilities = self._predict(unlabeled_bag)
+            print(probabilities)
 
     def predict(self, data):
         results = []
         for point in data:
-            probs = self._predict(point)
-            largest_target = self._find_largest_target_prob(probs)
+            bag = self._bag_point(point)
+            probabilities = self._predict(bag)
+            largest_target = self._find_largest_target_prob(probabilities)
             results.append(largest_target)
         return results
 
-    def _predict(self, point):
-        probs = {}
-        bag = self._bag_point(point)
+    def _predict(self, bag):
+        probabilities = {}
         for target in self.target_values:
-            probs[target] = self._calc_target_prob(bag, target)
-        return probs
+            probabilities[target] = self._calc_target_prob(bag, target)
+        return probabilities
 
     def _bag_point(self, point):
         bag = Counter()
@@ -62,12 +83,12 @@ class SemiNbClassifier:
     def _find_largest_target_prob(self, probs):
         return max(probs, key=probs.get)
 
-    def _add_word_counts(self, bag, target):
+    def _add_word_counts(self, bag, target, weight):
         for word in bag:
             if word[0] not in self.word_counts[target]:
-                self.word_counts[target][word[0]] = 1
+                self.word_counts[target][word[0]] = weight
             else:
-                self.word_counts[target][word[0]] += 1
+                self.word_counts[target][word[0]] += weight
 
     def _calc_target_prob(self, bag, target):
         probs = [self._get_target_prob(target)]
