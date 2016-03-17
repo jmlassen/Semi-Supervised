@@ -12,12 +12,14 @@ class TweetTrain(object):
 class MultiFileReader:
     def read_labels_and_filenames(self, users_file_name, tweets_directory, word_length=0, remove_punct=True):
         data = []
-        target = []
+        targets = []
         with open(users_file_name, encoding='utf8') as users_file:
             users_reader = csv.reader(users_file)
             for users_row in users_reader:
-                tweets_file_name = "{}{}.csv".format(tweets_directory, users_row[0])
-                if os.path.isfile(tweets_file_name) and (users_row[1] == 'male' or users_row[1] == 'female'):
+                user = users_row[0]
+                target = users_row[1]
+                tweets_file_name = "{}{}.csv".format(tweets_directory, user)
+                if os.path.isfile(tweets_file_name) and (target == 'male' or target == 'female'):
                     # TODO: You should probably make the csv file encoding consistent, you fool
                     try:
                         tweets_file = open(tweets_file_name)
@@ -26,9 +28,34 @@ class MultiFileReader:
                         tweets_file = open(tweets_file_name, encoding='utf8')
                         data.append(self._read_file(tweets_file, remove_punct, word_length))
                     tweets_file.close()
-                    # Save label
-                    target.append(users_row[1])
-        return TweetTrain(data, target)
+                    targets.append(target)
+        return TweetTrain(data, targets)
+
+    def read_labeled_an_unlabeled_data(self, users_file_name, tweets_directory, word_length=0, remove_punct=True):
+        data = []
+        targets = []
+        with open(users_file_name, encoding='utf8') as users_file:
+            users_reader = csv.reader(users_file)
+            for users_row in users_reader:
+                user = users_row[0]
+                target = users_row[1]
+                tweets_file_name = "{}{}.csv".format(tweets_directory, user)
+                # Here's where we change stuff, this needs to be combined
+                if os.path.isfile(tweets_file_name) and target is not 'remove':
+                    try:
+                        tweets_file = open(tweets_file_name)
+                        data.append(self._read_file(tweets_file, remove_punct, word_length))
+                    except UnicodeDecodeError:
+                        tweets_file = open(tweets_file_name, encoding='utf8')
+                        data.append(self._read_file(tweets_file, remove_punct, word_length))
+                    tweets_file.close()
+                    if target is 'female' or target is 'male':
+                        targets.append(target)
+                    else:
+                        # This could inconsistent, the value we assign needs to be tied to the value we set in
+                        # semi_supervised_nb_classifier
+                        targets.append(-1)
+        return TweetTrain(data, targets)
 
     def _read_file(self, tweets_file, remove_punct, word_length):
         tweets_reader = csv.reader(tweets_file)
