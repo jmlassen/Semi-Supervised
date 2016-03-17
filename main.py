@@ -1,5 +1,5 @@
 from driver import Driver
-from multi_file_reader import MultiFileReader
+from file_readers.multi_file_reader import MultiFileReader
 
 def main():
     tweet_train = MultiFileReader().read_labels_and_filenames('dataset/users_new.csv', 'dataset/tweets/', 2)

@@ -36,15 +36,12 @@ class MultiFileReader:
         for tweets_row in tweets_reader:
             if len(tweets_row) != 0:
                 if remove_punct is True:
-                    # Remove punctuation, this is pretty resource hungry, so we make it optional
                     exclude = set(string.punctuation)
                     tweets_row[0] = ''.join(ch for ch in tweets_row[0] if ch not in exclude)
                 if word_length > 0:
-                    # Do not count words with length less than word_length.
                     for word in tweets_row[0].split(' '):
                         if len(word) > word_length:
                             tweets += word.lower() + ' '
                 else:
-                    # Just copy over all the tweets
                     tweets += tweets_row[0] + ' '
         return tweets

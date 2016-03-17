@@ -2,7 +2,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 
-from multi_file_reader import MultiFileReader
+from file_readers.multi_file_reader import MultiFileReader
 
 DEFAULT_WORD_LENGTH = 2
 
