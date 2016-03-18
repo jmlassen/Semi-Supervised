@@ -2,7 +2,7 @@ from driver import Driver
 from file_readers.multi_file_reader import MultiFileReader
 
 def main():
-    tweet_train = MultiFileReader().read_labels_and_filenames('dataset/users_new.csv', 'dataset/tweets/', 2)
+    tweet_train = MultiFileReader().read_labeled_an_unlabeled_data('dataset/users_new.csv', 'dataset/tweets/', 2)
     driver = Driver()
     mean, results = driver.run_semi_test(tweet_train, 10)
     print("{} -> {}".format(mean, results))

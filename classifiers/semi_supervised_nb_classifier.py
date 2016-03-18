@@ -40,13 +40,18 @@ class SemiNbClassifier:
         unlabeled_bags = []
         for i, point in enumerate(data):
             bag = self._bag_point(point)
-            if target[i] == self.unlabeled_value:
+            if target[i] == str(self.unlabeled_value):
                 unlabeled_bags.append(bag)
-            self._add_word_counts(bag, target[i], self.weight)
-            self._add_target_count(target[i])
+            else:
+                self._add_word_counts(bag, target[i], self.weight)
+                self._add_target_count(target[i])
         for unlabeled_bag in unlabeled_bags:
             probabilities = self._predict(unlabeled_bag)
-            print(probabilities)
+            probability_sum = self._calculate_probability_sum(probabilities)
+            for target in self.target_values:
+                if probability_sum > 0:
+                    target_weight = probabilities[target] / probability_sum
+                    self._add_word_counts(unlabeled_bag, target, target_weight)
 
     def predict(self, data):
         results = []
@@ -78,7 +83,9 @@ class SemiNbClassifier:
             self.word_counts[value] = {}
 
     def _get_unique_target_values(self, target):
-        return set(target)
+        targets = set(target)
+        targets.discard(str(self.unlabeled_value))
+        return targets
 
     def _find_largest_target_prob(self, probs):
         return max(probs, key=probs.get)
@@ -111,3 +118,9 @@ class SemiNbClassifier:
         for item in self.target_count:
             sum += self.target_count[item]
         return self.target_count[target] / sum
+
+    def _calculate_probability_sum(self, probabilities):
+        sum = 0
+        for target in probabilities:
+            sum += probabilities[target]
+        return sum

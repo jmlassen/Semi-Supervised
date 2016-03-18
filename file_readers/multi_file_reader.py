@@ -41,7 +41,7 @@ class MultiFileReader:
                 target = users_row[1]
                 tweets_file_name = "{}{}.csv".format(tweets_directory, user)
                 # Here's where we change stuff, this needs to be combined
-                if os.path.isfile(tweets_file_name) and target is not 'remove':
+                if os.path.isfile(tweets_file_name) and target != 'remove':
                     try:
                         tweets_file = open(tweets_file_name)
                         data.append(self._read_file(tweets_file, remove_punct, word_length))
@@ -49,7 +49,7 @@ class MultiFileReader:
                         tweets_file = open(tweets_file_name, encoding='utf8')
                         data.append(self._read_file(tweets_file, remove_punct, word_length))
                     tweets_file.close()
-                    if target is 'female' or target is 'male':
+                    if (target == 'female') or (target == 'male'):
                         targets.append(target)
                     else:
                         # This could inconsistent, the value we assign needs to be tied to the value we set in
