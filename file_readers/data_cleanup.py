@@ -23,7 +23,6 @@ def print_gender_counts(records):
     print(genders)
 
 
-
 def main_new():
     records = []
     # Get all the records in the file
