@@ -4,9 +4,10 @@ import string
 
 
 class TweetTrain(object):
-    def __init__(self, data, target):
+    def __init__(self, data, target, unlabeled=None):
         self.data = data
         self.target = target
+        self.unlabeled = unlabeled
 
 
 class MultiFileReader:
@@ -34,6 +35,7 @@ class MultiFileReader:
     def read_labeled_an_unlabeled_data(self, users_file_name, tweets_directory, word_length=0, remove_punct=True):
         data = []
         targets = []
+        unlabeled = []
         with open(users_file_name, encoding='utf8') as users_file:
             users_reader = csv.reader(users_file)
             for users_row in users_reader:
@@ -44,18 +46,17 @@ class MultiFileReader:
                 if os.path.isfile(tweets_file_name) and target != 'remove':
                     try:
                         tweets_file = open(tweets_file_name)
-                        data.append(self._read_file(tweets_file, remove_punct, word_length))
+                        users_tweets = self._read_file(tweets_file, remove_punct, word_length)
                     except UnicodeDecodeError:
                         tweets_file = open(tweets_file_name, encoding='utf8')
-                        data.append(self._read_file(tweets_file, remove_punct, word_length))
+                        users_tweets = self._read_file(tweets_file, remove_punct, word_length)
                     tweets_file.close()
                     if (target == 'female') or (target == 'male'):
+                        data.append(users_tweets)
                         targets.append(target)
                     else:
-                        # This could inconsistent, the value we assign needs to be tied to the value we set in
-                        # semi_supervised_nb_classifier
-                        targets.append(-1)
-        return TweetTrain(data, targets)
+                        unlabeled.append(users_tweets)
+        return TweetTrain(data, targets, unlabeled)
 
     def _read_file(self, tweets_file, remove_punct, word_length):
         tweets_reader = csv.reader(tweets_file)
