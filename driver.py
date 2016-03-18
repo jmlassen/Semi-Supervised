@@ -7,7 +7,7 @@ import numpy as np
 from sklearn.utils import shuffle
 from sklearn.metrics import accuracy_score
 from classifiers.semi_supervised_nb_classifier import SemiNbClassifier
-from utilities import cross_val_score
+from utilities import cross_val_score, cross_val_score_semi
 
 
 class Driver:
@@ -16,7 +16,7 @@ class Driver:
 
     def run_semi_test(self, tweet_train, critical_value):
         clf = SemiNbClassifier()
-        results = cross_val_score(clf, tweet_train.data, tweet_train.target, critical_value)
+        results = cross_val_score_semi(clf, tweet_train.data, tweet_train.target, tweet_train.unlabeled, critical_value)
         return np.mean(results), results
 
     def run_benchmark_test(self, tweet_train, critical_value):
