@@ -4,7 +4,7 @@ from collections import Counter
 import functools
 from nltk.corpus import stopwords
 
-DEFAULT_N_WORDS = 250
+DEFAULT_N_WORDS = 100
 DEFAULT_SMOOTHING_VALUE = 1
 DEFAULT_UNLABELED_VALUE = -1
 DEFAULT_WEIGHT = 1
@@ -22,7 +22,7 @@ class SemiNbClassifier:
         self.target_count = None
         self.target_values = None
 
-    def fit(self, data, target, unlabeled=[]):
+    def fit(self, data, target, unlabeled=None):
         """
 
         Since the probability of an unlabeled point will change until all the labeled points are added to our
@@ -35,6 +35,8 @@ class SemiNbClassifier:
         :param unlabeled:
         :return: None
         """
+        if unlabeled is None:
+            unlabeled = []
         self.target_values = self._get_unique_target_values(target)
         self.target_count = {}
         self._add_bags(self.target_values)
@@ -64,6 +66,8 @@ class SemiNbClassifier:
         probabilities = {}
         for target in self.target_values:
             probabilities[target] = self._calc_target_prob(bag, target)
+            if probabilities[target] == 0:
+                raise Exception("When predicting, probability found to be 0!")
         return probabilities
 
     def _bag_point(self, point):
