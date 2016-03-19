@@ -42,7 +42,7 @@ class MultiFileReader:
                 user = users_row[0]
                 target = users_row[1]
                 tweets_file_name = "{}{}.csv".format(tweets_directory, user)
-                # Here's where we change stuff, this needs to be combined
+                # if os.path.isfile(tweets_file_name):
                 if os.path.isfile(tweets_file_name) and target != 'remove':
                     try:
                         tweets_file = open(tweets_file_name)
@@ -62,7 +62,7 @@ class MultiFileReader:
         tweets_reader = csv.reader(tweets_file)
         tweets = ""
         for tweets_row in tweets_reader:
-            if len(tweets_row) != 0:
+            if len(tweets_row) != 0 and not tweets_row[0].startswith("RT "):
                 if remove_punct is True:
                     exclude = set(string.punctuation)
                     tweets_row[0] = ''.join(ch for ch in tweets_row[0] if ch not in exclude)
