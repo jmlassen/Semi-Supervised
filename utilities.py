@@ -39,7 +39,6 @@ def cross_val_score_semi(classifier, data, target, unlabeled, critical_value):
     return np.array(results)
 
 
-
 def _calc_start_and_end_indexes(fold_len, index):
     start_index = fold_len * index
     end_index = fold_len * (index + 1)
