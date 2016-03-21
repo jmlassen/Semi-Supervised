@@ -54,6 +54,9 @@ class MultiFileReader:
                     if (target == 'female') or (target == 'male'):
                         data.append(users_tweets)
                         targets.append(target)
+                    elif target.startswith('unlabeled-'):
+                        data.append(users_tweets)
+                        targets.append('other')
                     else:
                         unlabeled.append(users_tweets)
         return TweetTrain(data, targets, unlabeled)
