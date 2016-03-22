@@ -54,7 +54,7 @@ class SemiKnnClassifier:
         :return:
         """
         neighbors = self._find_neighbors(point)
-        return int(max(set(neighbors), key=neighbors.count))
+        return Counter(neighbors).most_common(1)[0][0]
 
     def _transform_data(self, data):
         bag = Counter()

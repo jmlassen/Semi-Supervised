@@ -51,7 +51,7 @@ class SemiNbClassifier:
             for target in self.target_values:
                 target_weight = probabilities[target] / probability_sum
                 if target_weight > 0.9:
-                    self._add_word_counts(unlabeled_bag, target, 1)
+                    self._add_word_counts(unlabeled_bag, target, target_weight)
 
     def predict(self, data):
         results = []
