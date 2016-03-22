@@ -1,8 +1,8 @@
 from sklearn.utils import shuffle
 
+from classifiers.semi_supervised_knn_classifier import SemiKnnClassifier
 from classifiers.semi_supervised_nb_classifier import SemiNbClassifier
 from file_readers.multi_file_reader import MultiFileReader
-from preprocessing.tweets_database import TweetsDatabase
 
 
 def run_benchmark_test(tweets):
@@ -10,15 +10,17 @@ def run_benchmark_test(tweets):
     return results
 
 
-def run_benchmark_graph_point_generation(tweets):
+def run_benchmark_graph_point_generation(tweets, clf, run_with_unlabeled=False):
     # Set file names where we are going to save our results
-    results_file = 'results-benchmark.csv'
-    confusion_matrix_file = 'benchmark-confusion-matrix.csv'
+    results_file = 'semi-nb-results.csv'
+    confusion_matrix_file = 'semi-nb-confusion-matrix.csv'
     data, target = shuffle(tweets.data, tweets.target)
     for i in range(10, len(data[100:])):
         confusion_matrix = {}
-        clf = SemiNbClassifier()
-        clf.fit(data[100:(100 + i)], target[100:(100 + i)])
+        if run_with_unlabeled:
+            clf.fit(data[100:(100 + i)], target[100:(100 + i)], tweets.unlabeled)
+        else:
+            clf.fit(data[100:(100 + i)], target[100:(100 + i)])
         predicted_values = clf.predict(data[:100])
         correct = 0
         for j, prediction_point in enumerate(predicted_values):
@@ -35,14 +37,19 @@ def run_benchmark_graph_point_generation(tweets):
         print("{} -> {}".format(i, accuracy))
         with open(results_file, "a") as file:
             file.write("{},{}\n".format(i, accuracy))
-        print("{} -> {}\n".format(i, confusion_matrix))
+        print("{} -> {}".format(i, confusion_matrix))
         with open(confusion_matrix_file, "a") as file:
+            for target_val in confusion_matrix:
+                if target_val in confusion_matrix[target_val]:
+                    file.write("{},".format(confusion_matrix[target_val][target_val]))
+                else:
+                    file.write("{},".format(0))
             file.write("{} -> {}\n".format(i, confusion_matrix))
 
 
 def main():
     tweet_train = MultiFileReader().read_labeled_an_unlabeled_data('../dataset/users_new.csv', '../dataset/tweets/', 2)
-    run_benchmark_graph_point_generation(tweet_train)
+    run_benchmark_graph_point_generation(tweet_train, SemiNbClassifier(), run_with_unlabeled=True)
 
 if __name__ == '__main__':
     main()
