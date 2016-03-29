@@ -4,7 +4,7 @@ from collections import Counter
 import functools
 from nltk.corpus import stopwords
 
-DEFAULT_N_WORDS = 100
+DEFAULT_N_WORDS = 150
 DEFAULT_SMOOTHING_VALUE = 1
 DEFAULT_UNLABELED_VALUE = -1
 DEFAULT_LABELED_RECORD_WEIGHT = 1
