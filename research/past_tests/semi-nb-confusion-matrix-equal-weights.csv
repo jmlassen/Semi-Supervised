@@ -1,0 +1,390 @@
+10,0,27,10 -> {'male': {'female': 13, 'male': 10}, 'other': {'female': 6, 'male': 33}, 'female': {'female': 27, 'male': 11}}
+18,0,16,10 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 6, 'male': 36}, 'male': {'female': 10, 'male': 16}}
+18,0,16,11 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 6, 'male': 36}, 'male': {'female': 10, 'male': 16}}
+15,0,19,12 -> {'female': {'female': 15, 'male': 17}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 7, 'male': 19}}
+15,0,19,13 -> {'female': {'female': 15, 'male': 17}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 7, 'male': 19}}
+19,0,16,14 -> {'female': {'female': 19, 'male': 13}, 'other': {'female': 6, 'male': 36}, 'male': {'female': 10, 'male': 16}}
+15,0,19,15 -> {'female': {'female': 15, 'male': 17}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 7, 'male': 19}}
+0,0,26,16 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,17 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,18 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,19 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,20 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,21 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,22 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,23 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,24 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,25 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+13,0,22,26 -> {'female': {'female': 13, 'male': 19}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 4, 'male': 22}}
+13,0,23,27 -> {'female': {'female': 13, 'male': 19}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 3, 'male': 23}}
+13,0,24,28 -> {'female': {'female': 13, 'male': 19}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+13,0,24,29 -> {'female': {'female': 13, 'male': 19}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+18,0,17,30 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 3, 'male': 39}, 'male': {'female': 9, 'male': 17}}
+11,0,26,31 -> {'female': {'female': 11, 'male': 21}, 'other': {'female': 1, 'male': 41}, 'male': {'male': 26}}
+20,0,16,32 -> {'female': {'female': 20, 'male': 12}, 'other': {'female': 7, 'male': 35}, 'male': {'female': 10, 'male': 16}}
+20,0,16,33 -> {'female': {'female': 20, 'male': 12}, 'other': {'female': 7, 'male': 35}, 'male': {'female': 10, 'male': 16}}
+20,0,16,34 -> {'female': {'female': 20, 'male': 12}, 'other': {'female': 7, 'male': 35}, 'male': {'female': 10, 'male': 16}}
+23,0,15,35 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 9, 'male': 33}, 'male': {'female': 11, 'male': 15}}
+23,0,15,36 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 9, 'male': 33}, 'male': {'female': 11, 'male': 15}}
+23,0,15,37 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 9, 'male': 33}, 'male': {'female': 11, 'male': 15}}
+23,0,16,38 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 8, 'male': 34}, 'male': {'female': 10, 'male': 16}}
+23,0,15,39 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 10, 'male': 32}, 'male': {'female': 11, 'male': 15}}
+23,0,15,40 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 10, 'male': 32}, 'male': {'female': 11, 'male': 15}}
+23,0,15,41 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 10, 'male': 32}, 'male': {'female': 11, 'male': 15}}
+23,0,15,42 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 10, 'male': 32}, 'male': {'female': 11, 'male': 15}}
+23,0,16,43 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 8, 'male': 34}, 'male': {'female': 10, 'male': 16}}
+23,0,16,44 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 8, 'male': 34}, 'male': {'female': 10, 'male': 16}}
+23,0,16,45 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 8, 'male': 34}, 'male': {'female': 10, 'male': 16}}
+23,0,13,46 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 11, 'male': 31}, 'male': {'female': 13, 'male': 13}}
+23,0,15,47 -> {'female': {'female': 23, 'male': 9}, 'other': {'female': 8, 'male': 34}, 'male': {'female': 11, 'male': 15}}
+19,0,16,48 -> {'female': {'female': 19, 'male': 13}, 'other': {'female': 7, 'male': 35}, 'male': {'female': 10, 'male': 16}}
+18,0,16,49 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 4, 'male': 38}, 'male': {'female': 10, 'male': 16}}
+18,0,18,50 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 3, 'male': 39}, 'male': {'female': 8, 'male': 18}}
+18,0,16,51 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 6, 'male': 36}, 'male': {'female': 10, 'male': 16}}
+20,0,16,52 -> {'female': {'female': 20, 'male': 12}, 'other': {'female': 7, 'male': 35}, 'male': {'female': 10, 'male': 16}}
+20,0,16,53 -> {'female': {'female': 20, 'male': 12}, 'other': {'female': 7, 'male': 35}, 'male': {'female': 10, 'male': 16}}
+20,0,16,54 -> {'female': {'female': 20, 'male': 12}, 'other': {'female': 7, 'male': 35}, 'male': {'female': 10, 'male': 16}}
+18,0,16,55 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 6, 'male': 36}, 'male': {'female': 10, 'male': 16}}
+18,0,16,56 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 6, 'male': 36}, 'male': {'female': 10, 'male': 16}}
+18,0,16,57 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 6, 'male': 36}, 'male': {'female': 10, 'male': 16}}
+18,0,16,58 -> {'female': {'female': 18, 'male': 14}, 'other': {'female': 4, 'male': 38}, 'male': {'female': 10, 'male': 16}}
+16,0,19,59 -> {'female': {'female': 16, 'male': 16}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 7, 'male': 19}}
+11,0,21,60 -> {'female': {'female': 11, 'male': 21}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 5, 'male': 21}}
+14,0,20,61 -> {'female': {'female': 14, 'male': 18}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 6, 'male': 20}}
+9,0,24,62 -> {'female': {'female': 9, 'male': 23}, 'other': {'female': 1, 'male': 41}, 'male': {'female': 2, 'male': 24}}
+14,0,20,63 -> {'female': {'female': 14, 'male': 18}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 6, 'male': 20}}
+12,0,24,64 -> {'female': {'female': 12, 'male': 20}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+12,0,24,65 -> {'female': {'female': 12, 'male': 20}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+14,0,20,66 -> {'female': {'female': 14, 'male': 18}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 6, 'male': 20}}
+14,0,20,67 -> {'female': {'female': 14, 'male': 18}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 6, 'male': 20}}
+9,0,25,68 -> {'female': {'female': 9, 'male': 23}, 'other': {'female': 1, 'male': 41}, 'male': {'female': 1, 'male': 25}}
+9,0,25,69 -> {'female': {'female': 9, 'male': 23}, 'other': {'female': 1, 'male': 41}, 'male': {'female': 1, 'male': 25}}
+14,0,21,70 -> {'female': {'female': 14, 'male': 18}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 5, 'male': 21}}
+9,0,24,71 -> {'female': {'female': 9, 'male': 23}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+9,0,24,72 -> {'female': {'female': 9, 'male': 23}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+9,0,24,73 -> {'female': {'female': 9, 'male': 23}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+9,0,24,74 -> {'female': {'female': 9, 'male': 23}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+12,0,24,75 -> {'female': {'female': 12, 'male': 20}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+12,0,24,76 -> {'female': {'female': 12, 'male': 20}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 2, 'male': 24}}
+7,0,26,77 -> {'female': {'female': 7, 'male': 25}, 'other': {'female': 1, 'male': 41}, 'male': {'male': 26}}
+9,0,25,78 -> {'female': {'female': 9, 'male': 23}, 'other': {'female': 2, 'male': 40}, 'male': {'female': 1, 'male': 25}}
+7,0,26,79 -> {'female': {'female': 7, 'male': 25}, 'other': {'female': 1, 'male': 41}, 'male': {'male': 26}}
+2,0,26,80 -> {'female': {'female': 2, 'male': 30}, 'other': {'male': 42}, 'male': {'male': 26}}
+2,0,26,81 -> {'female': {'female': 2, 'male': 30}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,82 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+0,0,26,83 -> {'female': {'male': 32}, 'other': {'male': 42}, 'male': {'male': 26}}
+2,1,26,84 -> {'female': {'female': 2, 'male': 30}, 'other': {'other': 1, 'male': 41}, 'male': {'male': 26}}
+2,0,26,85 -> {'female': {'female': 2, 'male': 30}, 'other': {'male': 42}, 'male': {'male': 26}}
+1,0,26,86 -> {'female': {'female': 1, 'male': 31}, 'other': {'male': 42}, 'male': {'male': 26}}
+4,2,26,87 -> {'female': {'female': 4, 'male': 28}, 'other': {'other': 2, 'male': 40}, 'male': {'male': 26}}
+0,2,26,88 -> {'female': {'male': 32}, 'other': {'other': 2, 'male': 40}, 'male': {'male': 26}}
+0,3,26,89 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,2,26,90 -> {'female': {'male': 32}, 'other': {'other': 2, 'male': 40}, 'male': {'male': 26}}
+0,2,26,91 -> {'female': {'male': 32}, 'other': {'other': 2, 'male': 40}, 'male': {'male': 26}}
+4,3,26,92 -> {'female': {'female': 4, 'male': 28}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+4,3,26,93 -> {'female': {'female': 4, 'male': 28}, 'other': {'female': 1, 'other': 3, 'male': 38}, 'male': {'male': 26}}
+1,3,26,94 -> {'female': {'female': 1, 'male': 31}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,3,26,95 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,3,26,96 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,3,26,97 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,3,26,98 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,3,26,99 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,3,26,100 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,3,26,101 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,3,26,102 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,3,26,103 -> {'female': {'male': 32}, 'other': {'other': 3, 'male': 39}, 'male': {'male': 26}}
+0,6,26,104 -> {'female': {'male': 32}, 'other': {'other': 6, 'male': 36}, 'male': {'male': 26}}
+0,6,26,105 -> {'female': {'male': 32}, 'other': {'other': 6, 'male': 36}, 'male': {'male': 26}}
+0,9,26,106 -> {'female': {'male': 32}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,8,26,107 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 8, 'male': 34}, 'male': {'male': 26}}
+0,8,26,108 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 8, 'male': 34}, 'male': {'male': 26}}
+0,7,26,109 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 7, 'male': 35}, 'male': {'male': 26}}
+0,7,26,110 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 7, 'male': 35}, 'male': {'male': 26}}
+0,7,26,111 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 7, 'male': 35}, 'male': {'male': 26}}
+0,7,26,112 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 7, 'male': 35}, 'male': {'male': 26}}
+0,8,26,113 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 8, 'male': 34}, 'male': {'male': 26}}
+0,8,26,114 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 8, 'male': 34}, 'male': {'male': 26}}
+0,8,26,115 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 8, 'male': 34}, 'male': {'male': 26}}
+0,8,26,116 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 8, 'male': 34}, 'male': {'male': 26}}
+0,8,26,117 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 8, 'male': 34}, 'male': {'male': 26}}
+0,9,26,118 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+1,9,26,119 -> {'female': {'female': 1, 'other': 1, 'male': 30}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,120 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,121 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,122 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,123 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+1,9,26,124 -> {'female': {'female': 1, 'other': 1, 'male': 30}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+12,10,25,125 -> {'female': {'female': 12, 'other': 2, 'male': 18}, 'other': {'female': 2, 'other': 10, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+4,10,25,126 -> {'female': {'female': 4, 'other': 2, 'male': 26}, 'other': {'female': 1, 'other': 10, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,10,26,127 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 10, 'male': 32}, 'male': {'male': 26}}
+0,11,25,128 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,129 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,10,26,130 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 10, 'male': 32}, 'male': {'male': 26}}
+0,11,26,131 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,25,132 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,26,133 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,134 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,135 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,12,25,136 -> {'female': {'other': 3, 'male': 29}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+0,11,26,137 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,138 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,139 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,140 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,141 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,142 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,143 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,144 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,145 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,146 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,147 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,148 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,149 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,25,150 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,151 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,26,152 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,153 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,154 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,155 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,156 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,157 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,158 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,159 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,25,160 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,161 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,162 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,26,163 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,164 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,165 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,166 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,167 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,168 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,169 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,170 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,171 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,9,26,172 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,173 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,10,26,174 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 10, 'male': 32}, 'male': {'male': 26}}
+0,10,26,175 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 10, 'male': 32}, 'male': {'male': 26}}
+0,9,26,176 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,177 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,178 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,179 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,180 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,181 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,182 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,183 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,9,26,184 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 9, 'male': 33}, 'male': {'male': 26}}
+0,10,26,185 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 10, 'male': 32}, 'male': {'male': 26}}
+0,10,26,186 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 10, 'male': 32}, 'male': {'male': 26}}
+0,11,26,187 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,188 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,189 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,25,190 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,26,191 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,25,192 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,193 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,194 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,26,195 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+0,11,26,196 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'male': 26}}
+2,11,25,197 -> {'female': {'female': 2, 'other': 1, 'male': 29}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,198 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,199 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,200 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,201 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,202 -> {'female': {'other': 2, 'male': 30}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,203 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+0,11,25,204 -> {'female': {'other': 1, 'male': 31}, 'other': {'other': 11, 'male': 31}, 'male': {'other': 1, 'male': 25}}
+5,11,25,205 -> {'female': {'female': 5, 'other': 2, 'male': 25}, 'other': {'female': 1, 'other': 11, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+8,11,25,206 -> {'female': {'female': 8, 'other': 3, 'male': 21}, 'other': {'female': 1, 'other': 11, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+10,11,25,207 -> {'female': {'female': 10, 'other': 4, 'male': 18}, 'other': {'female': 1, 'other': 11, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+9,11,25,208 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 11, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+9,11,25,209 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 11, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+10,11,25,210 -> {'female': {'female': 10, 'other': 4, 'male': 18}, 'other': {'female': 2, 'other': 11, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+10,11,25,211 -> {'female': {'female': 10, 'other': 4, 'male': 18}, 'other': {'female': 2, 'other': 11, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+11,11,25,212 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 11, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+11,11,25,213 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 11, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+11,11,25,214 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 11, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+11,11,25,215 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 3, 'other': 11, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+14,12,23,216 -> {'female': {'female': 14, 'other': 4, 'male': 14}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+11,12,25,217 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+14,12,23,218 -> {'female': {'female': 14, 'other': 5, 'male': 13}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+18,12,22,219 -> {'female': {'female': 18, 'other': 5, 'male': 9}, 'other': {'female': 4, 'other': 12, 'male': 26}, 'male': {'female': 3, 'other': 1, 'male': 22}}
+16,12,23,220 -> {'female': {'female': 16, 'other': 4, 'male': 12}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+14,12,23,221 -> {'female': {'female': 14, 'other': 4, 'male': 14}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+11,12,25,222 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+13,12,24,223 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+18,12,22,224 -> {'female': {'female': 18, 'other': 5, 'male': 9}, 'other': {'female': 4, 'other': 12, 'male': 26}, 'male': {'female': 3, 'other': 1, 'male': 22}}
+18,12,22,225 -> {'female': {'female': 18, 'other': 5, 'male': 9}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'female': 3, 'other': 1, 'male': 22}}
+18,12,22,226 -> {'female': {'female': 18, 'other': 5, 'male': 9}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'female': 3, 'other': 1, 'male': 22}}
+19,12,20,227 -> {'female': {'female': 19, 'other': 5, 'male': 8}, 'other': {'female': 6, 'other': 12, 'male': 24}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,12,21,228 -> {'female': {'female': 19, 'other': 5, 'male': 8}, 'other': {'female': 4, 'other': 12, 'male': 26}, 'male': {'female': 4, 'other': 1, 'male': 21}}
+17,12,22,229 -> {'female': {'female': 17, 'other': 4, 'male': 11}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'female': 3, 'other': 1, 'male': 22}}
+17,12,22,230 -> {'female': {'female': 17, 'other': 4, 'male': 11}, 'other': {'female': 3, 'other': 12, 'male': 27}, 'male': {'female': 3, 'other': 1, 'male': 22}}
+17,13,23,231 -> {'female': {'female': 17, 'other': 4, 'male': 11}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+19,13,20,232 -> {'female': {'female': 19, 'other': 5, 'male': 8}, 'other': {'female': 6, 'other': 13, 'male': 23}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,13,20,233 -> {'female': {'female': 19, 'other': 5, 'male': 8}, 'other': {'female': 8, 'other': 13, 'male': 21}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,13,20,234 -> {'female': {'female': 19, 'other': 5, 'male': 8}, 'other': {'female': 7, 'other': 13, 'male': 22}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,13,20,235 -> {'female': {'female': 19, 'other': 4, 'male': 9}, 'other': {'female': 6, 'other': 13, 'male': 23}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,13,20,236 -> {'female': {'female': 19, 'other': 4, 'male': 9}, 'other': {'female': 6, 'other': 13, 'male': 23}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,13,20,237 -> {'female': {'female': 19, 'other': 4, 'male': 9}, 'other': {'female': 6, 'other': 13, 'male': 23}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,13,20,238 -> {'female': {'female': 19, 'other': 5, 'male': 8}, 'other': {'female': 8, 'other': 13, 'male': 21}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,13,20,239 -> {'female': {'female': 19, 'other': 4, 'male': 9}, 'other': {'female': 5, 'other': 13, 'male': 24}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,13,20,240 -> {'female': {'female': 19, 'other': 4, 'male': 9}, 'other': {'female': 4, 'other': 13, 'male': 25}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+19,13,20,241 -> {'female': {'female': 19, 'other': 4, 'male': 9}, 'other': {'female': 4, 'other': 13, 'male': 25}, 'male': {'female': 5, 'other': 1, 'male': 20}}
+17,13,22,242 -> {'female': {'female': 17, 'other': 4, 'male': 11}, 'other': {'female': 4, 'other': 13, 'male': 25}, 'male': {'female': 3, 'other': 1, 'male': 22}}
+18,13,22,243 -> {'female': {'female': 18, 'other': 4, 'male': 10}, 'other': {'female': 4, 'other': 13, 'male': 25}, 'male': {'female': 3, 'other': 1, 'male': 22}}
+13,13,23,244 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+13,13,24,245 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+13,13,24,246 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+12,13,25,247 -> {'female': {'female': 12, 'other': 4, 'male': 16}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'other': 1, 'male': 25}}
+12,13,25,248 -> {'female': {'female': 12, 'other': 4, 'male': 16}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'other': 1, 'male': 25}}
+12,13,25,249 -> {'female': {'female': 12, 'other': 4, 'male': 16}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'other': 1, 'male': 25}}
+15,13,23,250 -> {'female': {'female': 15, 'other': 4, 'male': 13}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+13,13,23,251 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+13,13,23,252 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+12,13,25,253 -> {'female': {'female': 12, 'other': 4, 'male': 16}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'other': 1, 'male': 25}}
+12,13,25,254 -> {'female': {'female': 12, 'other': 4, 'male': 16}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'other': 1, 'male': 25}}
+11,13,25,255 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,256 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,257 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,258 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,259 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,260 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,261 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,262 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,263 -> {'female': {'female': 10, 'other': 4, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,264 -> {'female': {'female': 10, 'other': 4, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,265 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,266 -> {'female': {'female': 10, 'other': 4, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,267 -> {'female': {'female': 10, 'other': 4, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+9,13,25,268 -> {'female': {'female': 9, 'other': 4, 'male': 19}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+9,13,25,269 -> {'female': {'female': 9, 'other': 4, 'male': 19}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+5,13,25,270 -> {'female': {'female': 5, 'other': 4, 'male': 23}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+5,13,25,271 -> {'female': {'female': 5, 'other': 4, 'male': 23}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+2,13,25,272 -> {'female': {'female': 2, 'other': 4, 'male': 26}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+2,13,25,273 -> {'female': {'female': 2, 'other': 3, 'male': 27}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+2,12,25,274 -> {'female': {'female': 2, 'other': 3, 'male': 27}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+0,12,25,275 -> {'female': {'other': 3, 'male': 29}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+0,12,25,276 -> {'female': {'other': 3, 'male': 29}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+0,12,25,277 -> {'female': {'other': 3, 'male': 29}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+0,12,25,278 -> {'female': {'other': 3, 'male': 29}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+0,12,25,279 -> {'female': {'other': 3, 'male': 29}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+1,12,25,280 -> {'female': {'female': 1, 'other': 3, 'male': 28}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+0,12,25,281 -> {'female': {'other': 3, 'male': 29}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+0,12,25,282 -> {'female': {'other': 3, 'male': 29}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+1,12,25,283 -> {'female': {'female': 1, 'other': 3, 'male': 28}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+0,12,25,284 -> {'female': {'other': 3, 'male': 29}, 'other': {'other': 12, 'male': 30}, 'male': {'other': 1, 'male': 25}}
+4,13,25,285 -> {'female': {'female': 4, 'other': 4, 'male': 24}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+2,13,25,286 -> {'female': {'female': 2, 'other': 4, 'male': 26}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+3,13,25,287 -> {'female': {'female': 3, 'other': 4, 'male': 25}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+4,13,25,288 -> {'female': {'female': 4, 'other': 4, 'male': 24}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+2,13,25,289 -> {'female': {'female': 2, 'other': 4, 'male': 26}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+1,13,25,290 -> {'female': {'female': 1, 'other': 4, 'male': 27}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+0,13,25,291 -> {'female': {'other': 4, 'male': 28}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+0,13,25,292 -> {'female': {'other': 4, 'male': 28}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+0,13,25,293 -> {'female': {'other': 4, 'male': 28}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+0,13,25,294 -> {'female': {'other': 4, 'male': 28}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+2,13,25,295 -> {'female': {'female': 2, 'other': 3, 'male': 27}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+3,13,25,296 -> {'female': {'female': 3, 'other': 3, 'male': 26}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+3,13,25,297 -> {'female': {'female': 3, 'other': 3, 'male': 26}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+7,13,25,298 -> {'female': {'female': 7, 'other': 3, 'male': 22}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+7,13,25,299 -> {'female': {'female': 7, 'other': 3, 'male': 22}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+5,13,25,300 -> {'female': {'female': 5, 'other': 3, 'male': 24}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+10,13,25,301 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,302 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,303 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,304 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+8,13,25,305 -> {'female': {'female': 8, 'other': 3, 'male': 21}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+9,13,25,306 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+4,13,25,307 -> {'female': {'female': 4, 'other': 3, 'male': 25}, 'other': {'other': 13, 'male': 29}, 'male': {'other': 1, 'male': 25}}
+8,13,25,308 -> {'female': {'female': 8, 'other': 3, 'male': 21}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+9,13,25,309 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+9,13,25,310 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+10,13,25,311 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+11,13,25,312 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,313 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,314 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,315 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,316 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,317 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,318 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,319 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,320 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,321 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,322 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,323 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,324 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,325 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+10,13,25,326 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+10,13,25,327 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,328 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,329 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+9,13,25,330 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+9,13,25,331 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+9,13,25,332 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+9,13,25,333 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+6,13,25,334 -> {'female': {'female': 6, 'other': 3, 'male': 23}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+8,13,25,335 -> {'female': {'female': 8, 'other': 3, 'male': 21}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+5,13,25,336 -> {'female': {'female': 5, 'other': 3, 'male': 24}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+10,13,25,337 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+9,13,25,338 -> {'female': {'female': 9, 'other': 3, 'male': 20}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+10,13,25,339 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,340 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,341 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,342 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+5,13,25,343 -> {'female': {'female': 5, 'other': 3, 'male': 24}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+5,13,25,344 -> {'female': {'female': 5, 'other': 3, 'male': 24}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+11,13,25,345 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,346 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,347 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,348 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,349 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,350 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,351 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,352 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,353 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,354 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,355 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,356 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,357 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,358 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,359 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,360 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,361 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,362 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+10,13,25,363 -> {'female': {'female': 10, 'other': 3, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,364 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,365 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,366 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,367 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,368 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,369 -> {'female': {'female': 11, 'other': 3, 'male': 18}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+14,13,24,370 -> {'female': {'female': 14, 'other': 3, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+13,13,24,371 -> {'female': {'female': 13, 'other': 3, 'male': 16}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+13,13,24,372 -> {'female': {'female': 13, 'other': 3, 'male': 16}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+13,13,24,373 -> {'female': {'female': 13, 'other': 3, 'male': 16}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+14,13,23,374 -> {'female': {'female': 14, 'other': 3, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+14,13,23,375 -> {'female': {'female': 14, 'other': 3, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+14,13,23,376 -> {'female': {'female': 14, 'other': 3, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+14,13,23,377 -> {'female': {'female': 14, 'other': 3, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+13,13,25,378 -> {'female': {'female': 13, 'other': 3, 'male': 16}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'other': 1, 'male': 25}}
+15,13,23,379 -> {'female': {'female': 15, 'other': 3, 'male': 14}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+15,13,23,380 -> {'female': {'female': 15, 'other': 4, 'male': 13}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+17,13,23,381 -> {'female': {'female': 17, 'other': 4, 'male': 11}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+17,13,23,382 -> {'female': {'female': 17, 'other': 4, 'male': 11}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+16,13,23,383 -> {'female': {'female': 16, 'other': 4, 'male': 12}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+15,13,23,384 -> {'female': {'female': 15, 'other': 4, 'male': 13}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+15,13,23,385 -> {'female': {'female': 15, 'other': 4, 'male': 13}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 2, 'other': 1, 'male': 23}}
+13,13,24,386 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+13,13,24,387 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+13,13,24,388 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+13,13,24,389 -> {'female': {'female': 13, 'other': 4, 'male': 15}, 'other': {'female': 3, 'other': 13, 'male': 26}, 'male': {'female': 1, 'other': 1, 'male': 24}}
+12,13,25,390 -> {'female': {'female': 12, 'other': 4, 'male': 16}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+12,13,25,391 -> {'female': {'female': 12, 'other': 4, 'male': 16}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+12,13,25,392 -> {'female': {'female': 12, 'other': 4, 'male': 16}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,393 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,394 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+11,13,25,395 -> {'female': {'female': 11, 'other': 4, 'male': 17}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+9,13,25,396 -> {'female': {'female': 9, 'other': 4, 'male': 19}, 'other': {'female': 2, 'other': 13, 'male': 27}, 'male': {'other': 1, 'male': 25}}
+6,13,25,397 -> {'female': {'female': 6, 'other': 4, 'male': 22}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
+6,13,25,398 -> {'female': {'female': 6, 'other': 4, 'male': 22}, 'other': {'female': 1, 'other': 13, 'male': 28}, 'male': {'other': 1, 'male': 25}}
