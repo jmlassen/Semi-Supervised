@@ -107,7 +107,7 @@ class SemiNbClassifier:
     def _add_word_counts(self, bag, target, weight):
         for word in bag:
             for other_target in self.target_values:
-                if word in self.word_counts[other_target]:
+                if word in self.word_counts[other_target] and target != other_target:
                     self.dropped_words.append(word)
                     del self.word_counts[other_target][word]
             if word not in self.dropped_words:
