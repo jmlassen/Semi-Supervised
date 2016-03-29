@@ -78,6 +78,7 @@ class SemiNbClassifier:
         probabilities = {}
         for target in self.target_values:
             probabilities[target] = self._calc_target_prob(bag, target)
+            # TODO: Change the way probability is calculated to fix this problem.
             if probabilities[target] == 0:
                 raise Exception("When predicting, probability found to be 0!")
         return probabilities
