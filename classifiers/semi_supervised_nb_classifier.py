@@ -28,6 +28,7 @@ class SemiNbClassifier:
         self.word_counts = None
         self.target_count = None
         self.target_values = None
+        self.dropped_words = None
 
     def fit(self, data, target, unlabeled=None):
         """
@@ -44,6 +45,7 @@ class SemiNbClassifier:
         """
         if unlabeled is None:
             unlabeled = []
+        self.dropped_words = []
         self.target_values = self._get_unique_target_values(target)
         self.target_count = {}
         self._add_bags(self.target_values)
@@ -104,10 +106,15 @@ class SemiNbClassifier:
 
     def _add_word_counts(self, bag, target, weight):
         for word in bag:
-            if word[0] not in self.word_counts[target]:
-                self.word_counts[target][word[0]] = weight
-            else:
-                self.word_counts[target][word[0]] += weight
+            for other_target in self.target_values:
+                if word in self.word_counts[other_target]:
+                    self.dropped_words.append(word)
+                    del self.word_counts[other_target][word]
+            if word not in self.dropped_words:
+                if word[0] not in self.word_counts[target]:
+                    self.word_counts[target][word[0]] = weight
+                else:
+                    self.word_counts[target][word[0]] += weight
 
     def _calc_target_prob(self, bag, target):
         probabilities = [self._get_target_probability(target)]
