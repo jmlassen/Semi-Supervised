@@ -7,17 +7,24 @@ from nltk.corpus import stopwords
 DEFAULT_N_WORDS = 100
 DEFAULT_SMOOTHING_VALUE = 1
 DEFAULT_UNLABELED_VALUE = -1
-DEFAULT_WEIGHT = 1
+DEFAULT_LABELED_RECORD_WEIGHT = 1
+DEFAULT_UNLABELED_RECORD_WEIGHT = 0.1
+DEFAULT_UNLABELED_RECORD_THRESHOLD = 0.75
 
 
 class SemiNbClassifier:
     def __init__(self, n_words=DEFAULT_N_WORDS, smoothing_value=DEFAULT_SMOOTHING_VALUE,
-                 stop=stopwords.words('english'), unlabeled_value=DEFAULT_UNLABELED_VALUE, weight=DEFAULT_WEIGHT):
+                 stop=stopwords.words('english'), unlabeled_value=DEFAULT_UNLABELED_VALUE,
+                 labeled_record_weight=DEFAULT_LABELED_RECORD_WEIGHT,
+                 unlabeled_record_weight=DEFAULT_UNLABELED_RECORD_WEIGHT,
+                 unlabeled_record_threshold=DEFAULT_UNLABELED_RECORD_THRESHOLD):
         self.n_words = n_words
         self.smoothing_value = smoothing_value
         self.stop = stop
         self.unlabeled_value = unlabeled_value
-        self.weight = weight
+        self.labeled_record_weight = labeled_record_weight
+        self.unlabeled_record_weight = unlabeled_record_weight
+        self.unlabeled_record_threshold = unlabeled_record_threshold
         self.word_counts = None
         self.target_count = None
         self.target_values = None
@@ -42,7 +49,7 @@ class SemiNbClassifier:
         self._add_bags(self.target_values)
         for i, point in enumerate(data):
             bag = self._bag_point(point)
-            self._add_word_counts(bag, target[i], self.weight)
+            self._add_word_counts(bag, target[i], self.labeled_record_weight)
             self._add_target_count(target[i])
         unlabeled_bags = []
         for point in unlabeled:
@@ -51,10 +58,10 @@ class SemiNbClassifier:
             probability_sum = self._calculate_probability_sum(probabilities)
             for target in self.target_values:
                 target_weight = probabilities[target] / probability_sum
-                if target_weight > 0.75:
+                if target_weight > self.unlabeled_record_threshold:
                     unlabeled_bags.append((unlabeled_bag, target))
         for bag in unlabeled_bags:
-            self._add_word_counts(bag[0], bag[1], 0.1)
+            self._add_word_counts(bag[0], bag[1], self.unlabeled_record_weight)
 
     def predict(self, data):
         results = []
