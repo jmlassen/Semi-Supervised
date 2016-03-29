@@ -12,8 +12,8 @@ def run_benchmark_test(tweets):
 
 def run_benchmark_graph_point_generation(tweets, clf, run_with_unlabeled=False):
     # Set file names where we are going to save our results
-    results_file = 'semi-nb-results.csv'
-    confusion_matrix_file = 'semi-nb-confusion-matrix.csv'
+    results_file = 'semi-nb-results-equal-weight.csv'
+    confusion_matrix_file = 'semi-nb-confusion-matrix-equal-weights.csv'
     data, target = shuffle(tweets.data, tweets.target)
     for i in range(10, len(data[100:])):
         confusion_matrix = {}

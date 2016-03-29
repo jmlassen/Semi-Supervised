@@ -44,14 +44,17 @@ class SemiNbClassifier:
             bag = self._bag_point(point)
             self._add_word_counts(bag, target[i], self.weight)
             self._add_target_count(target[i])
+        unlabeled_bags = []
         for point in unlabeled:
             unlabeled_bag = self._bag_point(point)
             probabilities = self._predict(unlabeled_bag)
             probability_sum = self._calculate_probability_sum(probabilities)
             for target in self.target_values:
                 target_weight = probabilities[target] / probability_sum
-                if target_weight > 0.9:
-                    self._add_word_counts(unlabeled_bag, target, target_weight)
+                if target_weight > 0.75:
+                    unlabeled_bags.append((unlabeled_bag, target))
+        for bag in unlabeled_bags:
+            self._add_word_counts(bag[0], bag[1], 0.1)
 
     def predict(self, data):
         results = []
