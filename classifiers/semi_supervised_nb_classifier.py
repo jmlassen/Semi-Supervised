@@ -8,7 +8,7 @@ DEFAULT_N_WORDS = 150
 DEFAULT_SMOOTHING_VALUE = 1
 DEFAULT_UNLABELED_VALUE = -1
 DEFAULT_LABELED_RECORD_WEIGHT = 1
-DEFAULT_UNLABELED_RECORD_WEIGHT = 0.01
+DEFAULT_UNLABELED_RECORD_WEIGHT = 0.1
 DEFAULT_UNLABELED_RECORD_THRESHOLD = 0.75
 
 
@@ -51,7 +51,7 @@ class SemiNbClassifier:
         self._add_bags(self.target_values)
         for i, point in enumerate(data):
             bag = self._bag_point(point)
-            self._add_word_counts(bag, target[i], self.labeled_record_weight)
+            self._add_word_counts(bag, target[i], self.labeled_record_weight, drop_target_duplicated=True)
             self._add_target_count(target[i])
         unlabeled_bags = []
         for point in unlabeled:
@@ -105,13 +105,14 @@ class SemiNbClassifier:
     def _find_largest_target_probability(self, probs):
         return max(probs, key=probs.get)
 
-    def _add_word_counts(self, bag, target, weight):
+    def _add_word_counts(self, bag, target, weight, drop_target_duplicated=False):
         for word in bag:
-            for other_target in self.target_values:
-                if word in self.word_counts[other_target] and target != other_target:
-                    self.dropped_words.append(word)
-                    del self.word_counts[other_target][word]
-            if word not in self.dropped_words:
+            if drop_target_duplicated:
+                for other_target in self.target_values:
+                    if word in self.word_counts[other_target] and target != other_target:
+                        self.dropped_words.append(word)
+                        del self.word_counts[other_target][word]
+            if word not in self.dropped_words or not drop_target_duplicated:
                 if word[0] not in self.word_counts[target]:
                     self.word_counts[target][word[0]] = weight
                 else:
